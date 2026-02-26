@@ -7,7 +7,7 @@ export class EnvConfigService implements IEnvConfig {
   constructor(private readonly configService: ConfigService) {}
 
   getAppPort(): number {
-    return this.configService.get<number>('APP_PORT', 3000);
+    return Number(this.configService.get<number>('APP_PORT', 3000));
   }
 
   getNodeEnv(): string {
