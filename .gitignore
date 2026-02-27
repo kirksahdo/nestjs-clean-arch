@@ -46,6 +46,7 @@ lerna-debug.log*
 .env.development
 .env.test
 .env.
+// dotenv development and test environment variable files should be ignored, but isn't
 
 .env.*
 
