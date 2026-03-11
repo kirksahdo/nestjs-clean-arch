@@ -20,4 +20,21 @@ describe('User Entity Unit Tests', () => {
     expect(sut.props.email).toEqual(props.email);
     expect(sut.props.password).toEqual(props.password);
   });
+
+  it('should return the correct name', () => {
+    expect(sut.name).toEqual(props.name);
+  });
+
+  it('should return the correct email', () => {
+    expect(sut.email).toEqual(props.email);
+  });
+
+  it('should return the correct password', () => {
+    expect(sut.password).toEqual(props.password);
+  });
+
+  it('should return the correct created at date', () => {
+    expect(sut.createdAt).toBeDefined();
+    expect(sut.createdAt).toBeInstanceOf(Date);
+  });
 });
